@@ -28,6 +28,8 @@ def init():
     global line
     line = code.split(":")
 
+def interpret():
+    print(line[1].split())
+
 init()
-print(line)
-print(line[2].split())
+interpret()
