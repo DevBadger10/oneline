@@ -1,0 +1,33 @@
+{
+  "name": "oneline-syntaxer",
+  "displayName": "OneLine Syntaxer",
+  "description": "Adds language support for the OneLine programming language.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "oneline",
+      "aliases": ["OneLine", "oneline"],
+      "extensions": [".ol"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "oneline",
+      "scopeName": "source.oneline",
+      "path": "./syntaxes/oneline.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "OneLine Colour Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneLine Colour Theme-color-theme.json"
+      }
+    ]
+  }
+}

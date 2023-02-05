@@ -1,0 +1,67 @@
+{ // THIS IS CURRENTLY INVALID. FIX IT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "OneLine",
+	"patterns": [{"include": "#expression"}],
+	"repository": {
+		"expression": { 
+			"patterns": [{"include": "#flow_control"}, {"include": "#register_control"}, {"include": "#reg_a"}, {"include": "#reg_b"}, {"include": "#reg_c"}, {"include": "#reg_d"}, {"include": "#reg_e"}, {"include": "#reg_f"}, {"include": "#reg_z"}, {"include": "#reg_x"}, {"include": "#reg_m"}, {"include": "#colon"}, {"include": "#exclaim"}, {"include": "#specific"}]
+		},
+		"flow_control": {
+			"name": "keyword.oneline.commands.flow_control",
+			"match": "lbl|jmp|cjmp|rjmp|ret"
+		},
+		"register_control": {
+			"name": "keyword.oneline.commands.register_control",
+			"match": "mov|add|sub|cpy|cat|swp"
+		},
+		"reg_a": {
+			"name": "keyword.oneline.register.a",
+			"match": "a"
+		},
+		"reg_b": {
+			"name": "keyword.oneline.register.b",
+			"match": "b"
+		},
+		"reg_c": {
+			"name": "keyword.oneline.register.c",
+			"match": "c"
+		},
+		"reg_d": {
+			"name": "keyword.oneline.register.d",
+			"match": "d"
+		},
+		"reg_e": {
+			"name": "keyword.oneline.register.e",
+			"match": "e"
+		},
+		"reg_f": {
+			"name": "keyword.oneline.register.f",
+			"match": "f"
+		},
+		"reg_z": {
+			"name": "keyword.oneline.register.z",
+			"match": "z"
+		},
+		"reg_x": {
+			"name": "keyword.oneline.register.x",
+			"match": "x"
+		},
+		"reg_m": {
+			"name": "keyword.oneline.register.m",
+			"match": "m"
+		},
+		"colon": {
+			"name": "keyword.oneline.colon",
+			"match": ":"
+		},
+		"exclaim": {
+			"name": "keyword.oneline.exclaim",
+			"match": "!"
+		},
+		"specific": {
+			"name": "keyword.oneline.specific",
+			"match": "|"
+		}
+		},
+	"scopeName": "source.oneline"
+}
