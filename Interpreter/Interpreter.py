@@ -30,3 +30,4 @@ def init():
 
 init()
 print(line)
+print(line[2].split())
