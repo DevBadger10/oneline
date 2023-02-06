@@ -56,21 +56,173 @@ def interpret():
                         sys.exit
                     a = 0
                 elif cline[1] == "b":
-                    pass
+                    if cline[2] == "a":
+                        a = b
+                    elif cline[2] == "b":
+                        b = b
+                    elif cline[2] == "c":
+                        c = b
+                    elif cline[2] == "d":
+                        d = b
+                    elif cline[2] == "e":
+                        e = b
+                    elif cline[2] == "f":
+                        f = b
+                    elif cline[2] == "z":
+                        z = b
+                    elif cline[2] == "x":
+                        x = b
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    b = 0
                 elif cline[1] == "c":
-                    pass
+                    if cline[2] == "a":
+                        a = c
+                    elif cline[2] == "b":
+                        b = c
+                    elif cline[2] == "c":
+                        c = c
+                    elif cline[2] == "d":
+                        d = c
+                    elif cline[2] == "e":
+                        e = c
+                    elif cline[2] == "f":
+                        f = c
+                    elif cline[2] == "z":
+                        z = c
+                    elif cline[2] == "x":
+                        x = c
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    c = 0
                 elif cline[1] == "d":
-                    pass
+                    if cline[2] == "a":
+                        a = d
+                    elif cline[2] == "b":
+                        b = d
+                    elif cline[2] == "c":
+                        c = d
+                    elif cline[2] == "d":
+                        d = d
+                    elif cline[2] == "e":
+                        e = d
+                    elif cline[2] == "f":
+                        f = d
+                    elif cline[2] == "z":
+                        z = d
+                    elif cline[2] == "x":
+                        x = d
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    d = 0
                 elif cline[1] == "e":
-                    pass
+                    if cline[2] == "a":
+                        a = e
+                    elif cline[2] == "b":
+                        b = e
+                    elif cline[2] == "c":
+                        c = e
+                    elif cline[2] == "d":
+                        d = e
+                    elif cline[2] == "e":
+                        e = e
+                    elif cline[2] == "f":
+                        f = e
+                    elif cline[2] == "z":
+                        z = e
+                    elif cline[2] == "x":
+                        x = e
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    e = 0
                 elif cline[1] == "f":
-                    pass
+                    if cline[2] == "a":
+                        a = f
+                    elif cline[2] == "b":
+                        b = f
+                    elif cline[2] == "c":
+                        c = f
+                    elif cline[2] == "d":
+                        d = f
+                    elif cline[2] == "e":
+                        e = f
+                    elif cline[2] == "f":
+                        f = f
+                    elif cline[2] == "z":
+                        z = f
+                    elif cline[2] == "x":
+                        x = f
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    f = 0
                 elif cline[1] == "z":
-                    pass
+                    if cline[2] == "a":
+                        a = z
+                    elif cline[2] == "b":
+                        b = z
+                    elif cline[2] == "c":
+                        c = z
+                    elif cline[2] == "d":
+                        d = z
+                    elif cline[2] == "e":
+                        e = z
+                    elif cline[2] == "f":
+                        f = z
+                    elif cline[2] == "z":
+                        z = z
+                    elif cline[2] == "x":
+                        x = z
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    z = 0
                 elif cline[1] == "x":
-                    pass
+                    if cline[2] == "a":
+                        a = x
+                    elif cline[2] == "b":
+                        b = x
+                    elif cline[2] == "c":
+                        c = x
+                    elif cline[2] == "d":
+                        d = x
+                    elif cline[2] == "e":
+                        e = x
+                    elif cline[2] == "f":
+                        f = x
+                    elif cline[2] == "z":
+                        z = x
+                    elif cline[2] == "x":
+                        x = x
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    x = 0
                 elif cline[1] == "m":
-                    pass
+                    if cline[2] == "a":
+                        a = m
+                    elif cline[2] == "b":
+                        b = m
+                    elif cline[2] == "c":
+                        c = m
+                    elif cline[2] == "d":
+                        d = m
+                    elif cline[2] == "e":
+                        e = m
+                    elif cline[2] == "f":
+                        f = m
+                    elif cline[2] == "z":
+                        z = m
+                    elif cline[2] == "x":
+                        x = m
+                    else:
+                        print("Interpreter Error: Invalid MOV Destination.")
+                        sys.exit
+                    m = 0
 
 init()
 interpret()
